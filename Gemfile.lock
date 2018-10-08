@@ -65,7 +65,7 @@ GEM
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    graphql (1.8.8)
+    graphql (1.8.10)
     graphql-client (0.13.0)
       activesupport (>= 3.0, < 6.0)
       graphql (~> 1.6)
@@ -92,7 +92,7 @@ GEM
     multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     oauth2 (1.1.0)
       faraday (>= 0.8, < 0.10)
@@ -111,7 +111,7 @@ GEM
       omniauth-oauth2 (~> 1.2)
     pg (0.21.0)
     rack (1.6.10)
-    rack-protection (2.0.0)
+    rack-protection (2.0.4)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -152,7 +152,7 @@ GEM
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
     redis (4.0.2)
-    sass (3.5.7)
+    sass (3.6.0)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -166,7 +166,7 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    shopify_api (4.13.0)
+    shopify_api (5.0.0)
       activeresource (>= 3.0.0)
       graphql-client
       rack
@@ -229,7 +229,7 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.4
+   1.16.6

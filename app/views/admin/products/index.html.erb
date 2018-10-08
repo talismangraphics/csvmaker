@@ -28,9 +28,8 @@
     </tbody>
   </table>
 
-  <p><%= HardWorker.perform_async(CsvBuilder.new("what", "products", "how" ).build, 5) %></p>
   <p><%= link_to("Generate Report", admin_products_path(format: :csv), class: "btn btn-success",) %></p>
-  <p><%= link_to("download", "/docs/testoutput.csv")%></p>
+  <p><%= link_to("download", "/docs/testbg-#{Date.today}.csv")%></p>
   <p><%= link_to("Back To Dashboard", root_path) %></p>
 
 </div>

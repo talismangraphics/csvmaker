@@ -20,7 +20,7 @@ class CsvBuilder
 
 	  grog = 1
 	    
-	  until grog == 5
+	  until grog == 3
 	    minedata = ShopifyAPI::Product.find(:all, :params =>{:page => grog, :limit => 50}, :select => selecting)
         unless minedata.empty?
 	

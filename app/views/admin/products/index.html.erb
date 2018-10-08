@@ -1,0 +1,36 @@
+<div class="well users-table">
+  <%= ShopifyAPI::Product.count%>
+  <table class="table">
+    <h5 style="text-align: center">Product list</h5>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+    </tr>
+    </thead>
+    <tbody>
+	    
+    <% @products.each do |product| %>
+    <tr>
+      <td><%= product.id %></td>
+      <td><%= product.title %></td>
+    </tr>
+    <tr>
+	  <td colspan=2>
+	  </td>
+    </tr>
+    <tr>
+	  <td colspan=2>
+		  Yep
+	  </td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+  <p><%= HardWorker.perform_async(CsvBuilder.new("what", "products", "how" ).build, 5) %></p>
+  <p><%= link_to("Generate Report", admin_products_path(format: :csv), class: "btn btn-success",) %></p>
+  <p><%= link_to("download", "/docs/testoutput.csv")%></p>
+  <p><%= link_to("Back To Dashboard", root_path) %></p>
+
+</div>

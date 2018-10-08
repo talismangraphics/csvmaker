@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Score</th>
+      </tr>
+      </thead>
+      <tr>
+        <td><%= @user._id %></td>
+        <td><%= @user.email %></td>
+        <td><%= @user.score %></td>
+      </tr>
+      <p><%= link_to("Generate Report", users_path(@user, format: :csv), class: "btn btn-success",) %></p>
+    </table>
+  </div>
+</div>

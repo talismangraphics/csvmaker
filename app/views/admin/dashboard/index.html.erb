@@ -1,0 +1,25 @@
+<div class="row">
+	<div class="column small-12">
+
+		<h2>Dashboard</h2>
+
+		<h3>Products</h3>
+
+
+		<ul>
+			<% @products.each do |product| %>
+				<li><%= product.title %></li>
+				
+			<% @variants = product.variants %>
+			<ul>
+			<% @variants.each do |variant| %>
+			<li><%= variant.id %></li>
+			<li><%= variant.weight %></li>
+			<% end %>
+			</ul>
+			<% end %>
+		</ul>	
+		
+		<%= link_to "Products", admin_products_path %><br/>		
+	</div>
+</div>
